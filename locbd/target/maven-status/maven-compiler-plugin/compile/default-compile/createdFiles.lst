@@ -1,0 +1,5 @@
+com\mycompany\conect\EntidadeBase.class
+com\mycompany\view\loginController.class
+com\mycompany\conect\GenericDAO.class
+com\mycompany\conect\ConnectionFactory.class
+com\mycompany\view\Main.class

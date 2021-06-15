@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="prcitems" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1313.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <children>
+      <VBox prefHeight="809.0" prefWidth="238.0" style="-fx-background-color: #ffbf69;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="124.0" fitWidth="145.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="60.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="30.0" prefWidth="238.0" text="User 01" textFill="#7737d0">
+               <font>
+                  <Font name="Bauhaus 93" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="257.0" stylesheets="@style.css" text="Home" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icones/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCarro" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="257.0" stylesheets="@style.css" text="Carro" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icones/car1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnLocacao" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="257.0" stylesheets="@style.css" text="Locação" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icones/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCliente" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="257.0" stylesheets="@style.css" text="Cliente" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icones/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#vaiParaLogin" prefHeight="52.0" prefWidth="257.0" stylesheets="@style.css" text="Sair" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icones/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="461.0" layoutY="14.0" text="Pacotes Disponíveis">
+         <font>
+            <Font name="OCR A Extended" size="53.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7714285714285715" endY="1.0" startX="0.3619047619047619">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.05000000074505806" green="0.783935010433197" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3055555522441864" green="1.0" blue="0.8263888955116272" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
